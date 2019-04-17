@@ -57,9 +57,9 @@ begin
     green_next_o_2 <= "111" when (x_pos_next_i>320) else "000";
     blue_next_o_2 <= "11" when (y_pos_next_i>240) else "00";
 	 
-	 red_next_o_3 <= "111" when (x_pos_next_i<128 or x_pos_next_i>384) else "000";
-    green_next_o_3 <= "111" when (x_pos_next_i>256 and x_pos_next_i<512) else "000";
-    blue_next_o_3 <= "11" when ((x_pos_next_i>128 and x_pos_next_i<256) or (x_pos_next_i>512)) else "00";
+    red_next_o_3 <= "111" when (x_pos_next_i<91 or x_pos_next_i>366) else "000";
+	green_next_o_3 <= "111" when ((x_pos_next_i>91 and x_pos_next_i<183) or (x_pos_next_i>274 and x_pos_next_i<366) or x_pos_next_i>457) else "000";
+	blue_next_o_3 <= "11" when ((x_pos_next_i>183 and x_pos_next_i<457) or x_pos_next_i>549) else "00";
 	 
 	 red_next_o_4 <= "111" when (y_pos_next_i<160 or y_pos_next_i>320) else "000";
     green_next_o_4 <= "111" when (y_pos_next_i<160 or y_pos_next_i>320) else "000";
